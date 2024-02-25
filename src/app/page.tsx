@@ -19,15 +19,15 @@ export default async function Home() {
         >
           New
         </Link>
-        <ul className='pl-4'>
-          {todos.map((todo) => (
-            <TodoItem
-              key={todo.id}
-              {...todo}
-            />
-          ))}
-        </ul>
       </header>
+      <ul className='pl-4'>
+        {todos.map((todo) => (
+          <TodoItem
+            key={todo.id}
+            {...todo}
+          />
+        ))}
+      </ul>
     </>
   );
 }
